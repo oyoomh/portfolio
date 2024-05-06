@@ -1,0 +1,33 @@
+.blind{
+  position: absolute;
+  width: 1px;height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+}
+.inner{
+  padding: 0 50px;
+}
+
+.word{
+  display: flex;
+  overflow: hidden;
+}
+.word .char{
+  transform: translateY(100%);
+}
+
+
+@media (max-width: 767px) {
+  .inner{
+    padding: 0 30px;
+  }
+}
+@media (max-width: 480px) {
+  .inner{
+    padding: 0 15px;
+  }
+}
+
+
+
